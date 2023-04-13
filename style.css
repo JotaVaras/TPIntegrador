@@ -8,11 +8,10 @@
 
 body{
     min-height: 200vh;
-    background-color: #cf2bf0;
 }
 
 header{
-    background-color: rgba( 255, 255, 255, 0.8);
+    background-color: rgba( 255, 255, 255, 0.5);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -95,7 +94,7 @@ header.sticky .logo, header.sticky ul li a{
 .secpri p{
     color: white;
     font-size: 20px;
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 150px;
     margin-right: 55%;
 }
@@ -109,7 +108,7 @@ header.sticky .logo, header.sticky ul li a{
     border-radius: 7px;
     border-style: none;
     cursor: pointer;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .secpri button:hover{
     transition: .5s;
