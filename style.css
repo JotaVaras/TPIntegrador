@@ -10,6 +10,8 @@ body{
     min-height: 200vh;
 }
 
+/* Empieza el Header */
+
 header{
     background-color: rgba( 255, 255, 255, 0.5);
     position: fixed;
@@ -23,7 +25,6 @@ header{
     transition: 0.6s;
     padding: 15px 100px;
 }
-
 
 header .logo{
     height: 90px;
@@ -69,10 +70,11 @@ header.sticky .logo, header.sticky ul li a{
     color: white;
 }
 
-/* Termina el css del menu */
+/* Termina el header */
 
 /* Primera section */
-.secpri{
+
+.sec1{
     background-image: url(heroimg.jpg);
     height: 100vh;
     width: 100%;
@@ -83,7 +85,7 @@ header.sticky .logo, header.sticky ul li a{
     display: flex;
     flex-direction: column;
 }
-.secpri h1{
+.sec1 h1{
     color: white;
     font-size: 60px;
     width: 40%;
@@ -91,14 +93,14 @@ header.sticky .logo, header.sticky ul li a{
     margin-left: 150px;
     margin-right: 10%;
 }
-.secpri p{
+.sec1 p{
     color: white;
     font-size: 20px;
     margin-top: 1%;
     margin-left: 150px;
     margin-right: 55%;
 }
-.secpri button{
+.sec1 button{
     color: fuchsia;
     background-color: white;
     padding: 15px;
@@ -110,15 +112,17 @@ header.sticky .logo, header.sticky ul li a{
     cursor: pointer;
     margin-top: 2%;
 }
-.secpri button:hover{
+.sec1 button:hover{
     transition: .5s;
     background-color: #000000;
     color: white;
 }
+
 /* Termina Primera section */
 
 /* Empieza Segunda section */
-.div2{
+
+.sec2{
     width: 100%;
     height: 110vh;
 }
@@ -129,20 +133,20 @@ header.sticky .logo, header.sticky ul li a{
     margin-left: 140px;
 }
 
-.div2 h1{
+.sec2 h1{
     font-size: 50px;
     margin-top: 70px;
     margin-bottom: 70px;
     text-align: center;
     color:fuchsia;
 }
-.div2 img{
+.sec2 img{
     height: 250px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(116, 21, 100, 0.6);
 }
 
-.div2 h2{
+.sec2 h2{
     color: fuchsia;
 }
 
@@ -191,11 +195,12 @@ header.sticky .logo, header.sticky ul li a{
     position: relative;
     margin-right: 30px;
 }
+
 /* Termina Segunda section */
 
 /* Empieza Tercera section */
 
-.div3{
+.sec3{
     height: 90vh;
     display: flex;
     background-color: #cf2bf0;
@@ -238,18 +243,66 @@ header.sticky .logo, header.sticky ul li a{
 
 /* Termina el Tercer Section */
 
-/* Empieza el Cuarto Section */
-.sec4{
-    width: 100%;
-    height: 110vh;
-}
+/* Empieza la Cuarta Section */
 
+.sec4{
+    background-color: white;
+    height: 100vh;
+}
 .sec4 h1{
-    text-align: center;
     color: #cf2bf0;
     font-size: 50px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    text-align: center;
+    padding: 50px
+}
+.sec4 h2{
+    color: #cf2bf0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.textos{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.texto1, .texto2, .texto3{
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.texto1{
+    width: 250px;
+    margin-left: 40px;
+}
+.texto2{
+    width: 250px;
+}
+.texto3{
+    width: 250px;
+    margin-left: 25px;
+}
+
+/* Termina la Cuarta Section */
+
+/* Empieza el Quinto Section */
+
+.sec5{
+    width: 100%;
+    height: 120vh;
+    background-color: #cf2bf0;
+}
+
+.sec5 h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 25px;
+    margin-bottom: 40px;
 }
 
 form {
@@ -269,8 +322,9 @@ form {
 }
 
 label{
+    color: white;
     margin-bottom: 10px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 input[type="text"],input[type="email"],textarea {
@@ -282,7 +336,7 @@ input[type="text"],input[type="email"],textarea {
     margin-bottom: 10px;
 }
 
-.sec4 input:hover, textarea:hover{
+.sec5 input:hover, textarea:hover{
     background-color: #ffc4fc;
 }
 
@@ -294,14 +348,10 @@ input[type="text"],input[type="email"],textarea {
     height: 200px
 }
 
-.div8 input:hover, textarea:hover{
-    background-color: #fff4f6;
-}
-
 button[type="submit"] {
-    background-color: #cf2bf0;
+    background-color:white;
     box-shadow: 0px 0px 10px rgb(161, 161, 161);
-    color: white;
+    color: #cf2bf0;
     font-size: 15px;
     font-weight: bold;
     border-radius: 8px;
@@ -314,30 +364,30 @@ button[type="submit"] {
     margin-left: 30vh; 
 }
 
-.sec4 button:hover{
+.sec5 button:hover{
     transition: .3s;
     background-color:black;
-    color: #cf2bf0;
+    color: white;
 }
-/* Termina la Cuarta Section */
 
-/* Empieza la Quinta Section */
-.sec5{
+/* Termina la Quinta Section */
+
+/* Empieza la Sexta Section */
+.sec6{
     width: 100%;
     height: 110vh;
-    background-color: #cf2bf0;
+    background-color: white;
 }
 
-.sec5 h1{
+.sec6 h1{
     padding: 40px;
     text-align: center;
-    color: white;
+    color: #cf2bf0;
     font-size: 50px;
-    margin-top: 65px;
     margin-bottom: 25px;
 }
 
-.sec5 form {
+.sec6 form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -356,7 +406,7 @@ button[type="submit"] {
 .inputs2 label{
     margin-bottom: 10px;
     font-weight: 600;
-    color: white;
+    color: #cf2bf0;
 }
 
 .inputs2 input[type="email"],textarea {
@@ -376,7 +426,7 @@ button[type="submit"] {
     height: 200px
 }
 
-.sec5 input:hover, textarea:hover{
+.sec6 input:hover, textarea:hover{
     background-color: #ffc4fc;
 }
 
@@ -386,7 +436,7 @@ button[type="submit"] {
 }
 
 .boton2 button[type="submit"] {
-    background-color: white;
+    background-color: black;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     color: #cf2bf0;
     font-size: 15px;
@@ -400,12 +450,12 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-.sec5 button:hover{
+.sec6 button:hover{
     transition: .3s;
-    background-color: #000000;
-    color: white;
+    background-color: white;
+    color: #000;
 }
-/* Termina la Quinta Section */
+/* Termina la Sexta Section */
 
 /* Empieza el footer */
 footer{
@@ -447,4 +497,5 @@ i{
 .redes ul li:hover .bi-envelope-fill{
     color: rgb(235, 235, 142);
 }
+
 /* Termina el footer */
